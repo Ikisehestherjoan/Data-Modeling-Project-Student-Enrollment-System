@@ -1,56 +1,95 @@
- Project Overview
-🎓 1. EDUCATION SECTOR CASE STUDY
-Case Study: LearnSphere Academy
+# 🎓 Education Data Model Project – LearnSphere Academy
 
-LearnSphere Academy is an online education platform that provides courses in tech, business, and creative skills. Its users include students, instructors, and corporate organizations that sponsor employee learning.
+## 📌 Project Overview
 
-Students enroll in courses, attend lessons, complete assignments, and receive certificates upon completion. Instructors create courses and track student performance. Organizations can sponsor multiple students and monitor their progress.
+LearnSphere Academy is an online education platform that offers courses in technology, business, and creative skills. Its users include students, instructors, and corporate organizations that sponsor employee learning.
 
-The platform generates revenue through course purchases, subscriptions, and corporate partnerships.
+Students enroll in courses, attend lessons, complete assignments, and receive certifications. Instructors manage course delivery and track performance, while organizations sponsor students and monitor progress.
 
-The Head of Data at LearnSphere wants to build a data warehouse to analyze student performance, revenue trends, and course engagement. This project focuses on designing a structured and scalable database system for a student enrollment platform. The work covers both conceptual and logical data modeling, ensuring proper normalization and clear relationship mapping.
+The platform generates revenue through:
 
-🎯 Objectives
-Design a conceptual ERD to represent business requirements
+* Course purchases
+* Subscriptions
+* Corporate partnerships
 
-Develop a logical data model with primary and foreign keys
+This project focuses on designing a **scalable and structured database system** to support analytics on student performance, revenue trends, and course engagement.
 
-Ensure proper handling of:
+---
 
-Many-to-many relationships
-One-to-many relationships
-Optional dependencies
-🧠 Conceptual Data Model
-The conceptual model defines the high-level structure of the system, including:
+## 🎯 Objectives
 
-Students enroll in courses
-Instructors teach courses
-Payments are made per enrollment
-Sponsors may optionally cover payments
-📷 ![Alt text](Database Modelling/Conceptual Erd.png)
+* Design a **conceptual ERD** to represent business requirements
+* Develop a **logical data model** with primary and foreign keys
+* Properly model:
 
-🏗️ Logical Data Model
+  * Many-to-many relationships
+  * One-to-many relationships
+  * Optional dependencies
+
+---
+
+## 🧠 Conceptual Data Model
+
+The conceptual model defines the high-level structure of the system:
+
+* Students enroll in courses
+* Instructors teach courses
+* Payments are made per enrollment
+* Sponsors may optionally cover payments
+
+📷
+![Conceptual ERD](Database%20Modelling/Conceptual%20Erd.png)
+
+---
+
+## 🏗️ Logical Data Model
+
 The logical model translates the conceptual design into structured tables with defined keys and relationships.
 
-Key Design Decisions:
-Introduced an Enrollment table to resolve the many-to-many relationship between students and courses
-Linked Payment to Enrollment to maintain financial accuracy
-Modeled Sponsor as an optional entity
-📷 ![Alt text](Database Modelling/LOGICAL_ERD_(Education_Casestudy).png)
+### 🔑 Key Design Decisions
 
-🗂️ Entities
-Student
-Course
-Instructor
-Enrollment
-Payment
-Sponsor
-🔑 Key Features
-Normalized database design
-Proper use of primary and foreign keys
-Clear cardinality
-Scalable and analytics-ready structure
-🚀 Future Improvements
-Implement SQL schema
-Build and Automate ETL pipeline
-Develop analytical dashboards
+* Introduced an **Enrollment** table to resolve the many-to-many relationship between Students and Courses
+* Linked **Payment** to Enrollment to ensure financial accuracy
+* Modeled **Sponsor** as an optional entity (nullable relationship)
+
+📷
+![Logical ERD](Database%20Modelling/LOGICAL_ERD_\(Education_Casestudy\).png)
+
+---
+
+## 🗂️ Core Entities
+
+* Student
+* Course
+* Instructor
+* Enrollment
+* Payment
+* Sponsor
+
+---
+
+## 🔑 Key Features
+
+* Fully normalized database design
+* Proper use of primary and foreign keys
+* Clear cardinality and relationships
+* Scalable and analytics-ready structure
+
+---
+
+## 🚀 Future Improvements
+
+* Implement SQL schema (DDL scripts)
+* Build and automate ETL pipelines (Python / PySpark)
+* Develop Power BI dashboards for analytics
+
+---
+
+## 💼 Project Value
+
+This project demonstrates:
+
+* Strong understanding of **data modeling concepts**
+* Ability to translate business requirements into **technical design**
+* Readiness for **data engineering and analytics roles**
+
