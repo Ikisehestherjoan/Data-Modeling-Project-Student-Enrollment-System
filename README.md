@@ -84,12 +84,3 @@ The logical model translates the conceptual design into structured tables with d
 * Develop Power BI dashboards for analytics
 
 ---
-
-## 💼 Project Value
-
-This project demonstrates:
-
-* Strong understanding of **data modeling concepts**
-* Ability to translate business requirements into **technical design**
-* Readiness for **data engineering and analytics roles**
-
